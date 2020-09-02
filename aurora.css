@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin:0;
+    text-align: center;
+}
+
+.parallax1 {
+    background: url(1A.jpg);
+    min-height: 100%; 
+}
+.parallax2 {
+    background: url(1D.jpg);
+    min-height: 100%; 
+}
+.parallax3 {
+    background: url(1C.jpg);
+    min-height: 100%; 
+}
+.parallax4 {
+    background: url(1B.jpg);
+    min-height: 100%; 
+    
+}
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .75 black;
+}
+.heading {
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    font-family: 'Bangers';
+    top: 50%;
+    width: 100%;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px black;
+}
+.new {
+    padding: 0% 5%;
+    color: white;
+    background-color: black;
+}
+.para {
+    text-align: justify;
+    padding: 0% 5% 5% 5%;
+    line-height: 1.5;
+}
+.column {
+    float: left;
+    width: 40%;
+    padding: 0% 4%;
+    text-align: justify;
+} 
+section {
+    overflow: auto;
+    padding: 20px 50px;
+}
+.dark {
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: black;
+    color: white;
+    
+}
+.lst {
+    text-align: justify;
+}
+.foot {
+    overflow: auto;
+    background-color: black;
+    color: white;
+}
+.container {
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .padd {
+      padding-left: 48.5%;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 7px;
+    padding: 16px 35px;
+  }
+@media (max-width: 768px) {
+    .heading {
+        font-size: 300%;
+        top: 45%;
+    }
+    .column {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    .para {
+        text-align: left;
+        
+    }
+    .lst {
+        text-align: left;
+    }
+    .container {
+        padding-top: 4%;
+        padding-bottom: 4%;
+      }
+    .text {
+        padding-left: 71%;
+    }
+}
